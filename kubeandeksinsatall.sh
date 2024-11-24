@@ -1,7 +1,9 @@
+#!/bin/bash
+
 echo "install kubectl"
 
 VALIDATE(){
-    if ($1 -ne 0)
+    if [$1 -ne 0]
 then 
 echo "$2 is not exceute successfully please check"
 else 
