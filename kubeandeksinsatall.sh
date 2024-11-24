@@ -2,6 +2,16 @@
 
 echo "install kubectl"
 
+USERID=$(id -u)
+
+root_check(){
+    if [ $USERID -ne 0]
+    then
+    echo -e "Please run the script with root user $R" 
+    exit
+    fi
+}
+
 VALIDATE(){
     if [$1 -ne 0]
 then 
@@ -18,7 +28,9 @@ VALIDATE $? "command"
 chmod +x ./kubectlddd
 
 VALIDATE $? "command"
-sudo mv kubectl /usr/local/bin/kubectl
+
+mv kubectl /usr/local/bin/kubectl
+
 VALIDATE $? "command"
 
 kubectl version
