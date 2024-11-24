@@ -23,7 +23,7 @@ curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.31.0/2024-09-12/bin/linu
 
 VALIDATE $? "command"
 
-chmod +x ./kubectlddd
+chmod +x ./kubectl
 
 VALIDATE $? "command"
 
@@ -52,4 +52,4 @@ sudo mv /tmp/eksctl /usr/local/bin
 
 echo "give AWS Credetial"
 
-aws configure
+#aws configure
