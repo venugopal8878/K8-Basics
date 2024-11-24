@@ -3,7 +3,7 @@
 USERID=$(id -u)
 
 root_check(){
-    if [ $USERID -ne 0]
+    if ($USERID -ne 0)
     then
     echo -e "Please run the script with root user $R" 
     exit
@@ -11,7 +11,7 @@ root_check(){
 }
 
 VALIDATE(){
-    if [$1 -ne 0]
+    if ($1 -ne 0)
 then 
 echo "$2 is not exceute successfully please check"
 else 
