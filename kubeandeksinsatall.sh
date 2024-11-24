@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "install kubectl"
-
 USERID=$(id -u)
 
 root_check(){
