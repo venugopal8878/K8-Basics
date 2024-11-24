@@ -31,7 +31,7 @@ mv kubectl /usr/local/bin/kubectl
 
 VALIDATE $? "command"
 
-version =$(kubectl version)
+version=$(kubectl version)
 echo "ks version $version"
 
 
