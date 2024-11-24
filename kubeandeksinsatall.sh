@@ -8,10 +8,13 @@ else
 echo "$2 executed successfully"
 fi 
 }
+
 curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.31.0/2024-09-12/bin/linux/amd64/kubectl
+
 VALIDATE $? "command"
 
-chmod +x ./kubectl
+chmod +x ./kubectlddd
+
 VALIDATE $? "command"
 sudo mv kubectl /usr/local/bin/kubectl
 VALIDATE $? "command"
