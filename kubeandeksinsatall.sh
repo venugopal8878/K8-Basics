@@ -1,11 +1,25 @@
 echo "install kubectl"
+
+VALIDATE(){
+    if ($1 -ne 0)
+then 
+echo "$2 is not exceute successfully please check"
+else 
+echo "$2 executed successfully"
+fi 
+}
 curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.31.0/2024-09-12/bin/linux/amd64/kubectl
+VALIDATE $? "command"
+
 chmod +x ./kubectl
+VALIDATE $? "command"
 sudo mv kubectl /usr/local/bin/kubectl
+VALIDATE $? "command"
+
 kubectl version
+VALIDATE $? "command"
 
-
-eks "install eksctl"
+echo "install eksctl"
 
 # for ARM systems, set ARCH to: `arm64`, `armv6` or `armv7`
 ARCH=
