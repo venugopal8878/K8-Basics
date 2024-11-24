@@ -31,8 +31,9 @@ mv kubectl /usr/local/bin/kubectl
 
 VALIDATE $? "command"
 
-kubectl version
-VALIDATE $? "command"
+version =$(kubectl version)
+echo "ks version $version"
+
 
 echo "install eksctl"
 
