@@ -1,5 +1,5 @@
 apiVersion:
- Kind: Namespace
+Kind: Namespace
 metadata:
  name: expense
  labels:
