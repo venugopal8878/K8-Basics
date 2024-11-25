@@ -1,5 +1,5 @@
-apiVersion:
- name:
+apiVersion: v1
+Kind: Pod
 metadata:
   name: first pod
   environment: dev
