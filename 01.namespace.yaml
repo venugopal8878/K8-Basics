@@ -1,4 +1,4 @@
-apiVersion:
+apiVersion: v1
 Kind: Namespace
 metadata:
  name: expense
