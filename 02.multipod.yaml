@@ -1,0 +1,11 @@
+apiVersion: v1 
+kind: multipod
+metadata: 
+ name: multipod
+spec:
+containers:
+ - name: nginx
+   image: nginx
+ - name: almalinux
+   image: almalinux:9
+   command: "sleep 100"
