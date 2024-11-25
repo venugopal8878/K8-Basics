@@ -38,7 +38,7 @@ echo "ks version $version"
 echo "install eksctl"
 
 # for ARM systems, set ARCH to: `arm64`, `armv6` or `armv7`
-ARCH=
+ARCH=amd64
 
 PLATFORM=$(uname -s)_$ARCH
 
