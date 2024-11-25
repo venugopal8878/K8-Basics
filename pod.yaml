@@ -1,0 +1,13 @@
+apiVersion:
+ name:
+metadata:
+  name: first pod
+  environment: dev
+spec:
+ containers:
+  - name: nginx
+    image: nginx:latest
+    port: 
+     - containerport: 80
+
+
