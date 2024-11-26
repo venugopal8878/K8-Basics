@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx-config
+   name: nginx-config
 data:
   course: devops
   value: "120hr"
