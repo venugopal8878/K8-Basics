@@ -8,7 +8,7 @@ spec:
     image: nginx
     envFrom:
     - configMapKeyRef:
-        name: nginx-config #name we given the config file as metadata
+         name: nginx-config #name we given the config file as metadata
 
      #befor calling the file diretly here we call only values in the file   
     # env: 
