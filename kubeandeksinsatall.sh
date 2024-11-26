@@ -27,7 +27,7 @@ chmod +x ./kubectl
 
 VALIDATE $? "command"
 
-mv kubectl /usr/local/bin/kubectl
+sudo mv kubectl /usr/local/bin/kubectl
 
 VALIDATE $? "command"
 
