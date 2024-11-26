@@ -6,14 +6,19 @@ spec:
   containers:
   - name: nginx
     image: nginx
-    env: 
-      - name: devops
-        valueFrom:
-         configMapKeyRef:
-           name: nginx-config #name of the config file we cretaed/refering to
-           key: duration #env.name config file defoined variable name
-      - name: course
-        valueFrom:
-         configMapKeyRef:
-           name: nginx-config
-           key: course
+    envFrom:
+    - configMapKeyRef:
+        name: nginx-config #name we given the config file as metadata
+
+     #befor calling the file diretly here we call only values in the file   
+    # env: 
+    #   - name: devops
+    #     valueFrom:
+    #      configMapKeyRef:
+    #        name: nginx-config #name of the config file we cretaed/refering to
+    #        key: duration #env.name config file defoined variable name
+    #   - name: course
+    #     valueFrom:
+    #      configMapKeyRef:
+    #        name: nginx-config
+    #        key: course
