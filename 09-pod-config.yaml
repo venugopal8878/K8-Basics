@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+ name: get value from ConfigMap 
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    env: 
+      - name: devops
+        valueFrom:
+         configMapkeyRef:
+           name: nginx-config #name of the config file we cretaed/refering to
+           key: duration #env.name config file defoined variable name
+      - name: course
+        valueFrom:
+         configMapkeyRef:
+           name: nginx-config
+           key: course
