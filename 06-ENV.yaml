@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ENV 
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    ENV: 
+    - name: venu
+      value: expense
+    - name: course
+      value: devops
+    - name: duration
+      value: "12ohrs"
+
