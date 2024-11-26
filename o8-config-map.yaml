@@ -3,5 +3,5 @@ kind: Pod
 metadata:
    name: nginx-config
 data:
-  course: devops
-  value: "120hr"
+   course: devops
+   value: "120hr"
