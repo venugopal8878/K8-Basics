@@ -1,11 +1,11 @@
 apiVersion: v1
-kind: label
+kind: labels
 metadata:
  name: label
  labels:
-  enviroment: dev
-  project: expense
+   enviroment: dev
+   project: expense
 spec:
  containers:
-  name: nginx
-  image: nginx
+   name: nginx
+   image: nginx
