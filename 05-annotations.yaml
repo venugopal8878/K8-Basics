@@ -7,5 +7,5 @@ annotations:
    buildurl: "give build url"
 spec:
    containers:
-     name: nginx
-     image: nginx
+     - name: nginx
+       image: nginx
