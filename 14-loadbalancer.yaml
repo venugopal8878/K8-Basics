@@ -1,0 +1,14 @@
+apiVersion: v1 
+kind: Service
+metadata: 
+  name: load-balancer
+spec: 
+  type: LoabBalancer
+  selector:
+    project:  expense #which has lable has this this will connect to that service
+  ports:
+  - name: loadk8s
+    protocol: TCP
+    port: 80
+    targetPort: 80
+  
