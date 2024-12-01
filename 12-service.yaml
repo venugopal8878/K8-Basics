@@ -1,0 +1,14 @@
+apiVersion: v1 
+kind: Service
+metadata:
+   name: nginx
+spec:
+  selector:
+    project: expense #which pod has this labels this service will connect to them
+    module: backend
+    envromanet: dev 
+  ports:
+   - name: nginx service port
+     protocol: Tcp
+     port: 80 #service port
+     targetport: 80 #container port
