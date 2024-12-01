@@ -9,6 +9,6 @@ spec:
     envromanet: dev 
   ports:
   - name: nginx-service-port
-    protocol: Tcp
+    protocol: TCP
     port: 80 #service port
     targetPort: 80 #container port
