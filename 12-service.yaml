@@ -8,7 +8,7 @@ spec:
     module: backend
     envromanet: dev 
   ports:
-   - name: nginx service port
-     protocol: Tcp
-     port: 80 #service port
-     targetport: 80 #container port
+  - name: nginx service port
+    protocol: Tcp
+    port: 80 #service port
+    targetport: 80 #container port
