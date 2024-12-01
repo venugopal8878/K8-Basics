@@ -3,7 +3,7 @@ kind: Service
 metadata: 
   name: load-balancer
 spec: 
-  type: LoabBalancer
+  type: LoadBalancer
   selector:
     project:  expense #which has lable has this this will connect to that service
   ports:
