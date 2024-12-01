@@ -1,9 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  project: expense #which pod has this labels this service will connect to them
-  module: backend
-  envromanet: dev 
+  name: nginx
 spec:
   containers:
     # docker run -d --name nginx nginx
